@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Da-Mi-AbDev <millerdayana95@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "glob": "^13.0.6",
@@ -16,5 +16,8 @@
     "postcss-sort-media-queries": "^6.7.1",
     "prettier": "^3.4.2",
     "vite": "^7.3.7"
+  },
+  "dependencies": {
+    "simplelightbox": "^2.14.3"
   }
 }

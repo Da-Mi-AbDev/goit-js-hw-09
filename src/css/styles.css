@@ -7,4 +7,131 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  background: #fff;
+}
+ul,
+input,
+button {
+  font-family: inherit;
+}
+.nav-link {
+  list-style: none;
+}
+.nav-link a,
+.gallery-nav,
+.form-nav {
+  text-decoration: none;
+  color: #3956bd;
+  font-weight: 600;
+  font-size: 24px;
+}
+.nav-link a:hover,
+.gallery-nav:hover,
+.form-nav:hover {
+  color: #2e2f42;
+}
+.gallery-nav,
+.form-nav {
+  padding-left: 30px;
+}
+/* Gallery Styles */
+.gallery {
+  display: flex;
+  flex-direction: row;
+  padding: 24px 156px;
+  width: 1440px;
+  height: auto;
+  gap: 24px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.gallery-item {
+  display: flex;
+}
+.gallery-image {
+  display: inline;
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 350 ease-in-out;
+}
+.gallery-image:hover {
+  transform: scale(1.04);
+}
+.simple-lightbox {
+  background: rgba(46, 47, 66, 0.8);
+}
+/* Form Styles */
+.feedback-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+input:hover {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+input::placeholder {
+  color: transparent;
+}
+input:active::placeholder {
+  color: #2e2f42;
+}
+textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+  padding: 8px 16px;
+}
+button {
+  margin-top: 8px;
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  background: #6c8cff;
 }
