@@ -15,14 +15,13 @@ if (savedState) {
 feedbackForm.addEventListener('input', event => {
   const fieldName = event.target.name;
   const fieldValue = event.target.value;
-  formData[fieldName] = fieldValue.trim();
-  console.log(formData);
+  formData[fieldName] = fieldValue;
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 });
 
 feedbackForm.addEventListener('submit', event => {
   event.preventDefault();
-  if (formData.email === '' || formData.message === '') {
+  if (formData.email.trim() === '' || formData.message.trim() === '') {
     alert('Fill please all fields');
     return;
   }

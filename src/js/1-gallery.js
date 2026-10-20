@@ -84,8 +84,6 @@ const markup = images
   })
   .join('');
 gallery.innerHTML = markup;
-console.log(gallery);
-
 new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
